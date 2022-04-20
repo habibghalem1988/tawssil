@@ -1,0 +1,70 @@
+
+<ion-content [fullscreen]="true">
+  <swiper effect="cube" [keyboard]="true" [pagination]="true" [scrollbar]="true"
+  [zoom]="true" [allowTouchMove]="true" [pagination]="{ clickable: true }" [mousewheel]="true">
+    <span slot="container-start">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-chip routerLink="/home"  color="secondary">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </ion-chip>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </span>
+        <ng-template swiperSlide>
+          <ion-grid>
+            <ion-row >
+              <ion-col sizeLg="4" offsetLg="4" class="ion-align-self-center" >
+                <ion-img src="../../assets/transportor.jpg"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col sizeLg="6" offsetLg="3" class="ion-align-self-center">
+                <ion-text color="black">
+                  <p>Vous avez une cargaison et vous cherchez un transporteur ?</p>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ng-template>
+        <ng-template swiperSlide>
+          <ion-grid>
+            <ion-row>
+              <ion-col sizeLg="6" offsetLg="3" class="ion-align-self-center">
+                <ion-img src="../../assets/mooving-truck.jpg"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col sizeLg="6" offsetLg="3" class="ion-align-self-center">
+                <ion-text color="black">
+                  <p>Notre plateforme numérique <ion-text class="main-color">Wassalni</ion-text> vous permet de trouver un transporteur de votre choix</p>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ng-template>
+        <ng-template swiperSlide>
+          <ion-grid>
+            <ion-row>
+              <ion-col sizeLg="6" offsetLg="3" class="ion-align-self-center">
+                  <h1><ion-text class="main-color"> WASSALNI </ion-text></h1>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col sizeLg="6" offsetLg="3" class="ion-align-self-center">
+                <ion-img src="../../assets/logistic4.jpg"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col sizeLg="6" offsetLg="3" class="ion-align-self-center">
+                  <p>Accédez maintenant à la plateforme </p>
+                  <ion-icon name="enter"  class="enter-btn" routerLink="/home" style="cursor: pointer;"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ng-template>
+  </swiper>
+</ion-content>
+

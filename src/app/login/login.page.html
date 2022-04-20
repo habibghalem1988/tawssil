@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title class="ion-text-center">TAWSSIL</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-align-self-center" sizeLg="6" offsetLg="3">
+          <ion-card >
+          <ion-item>
+              <ion-icon name="lock-closed-sharp" color="danger" slot="end"></ion-icon>
+          </ion-item>
+          <ion-card-header>
+            <ion-card-title class="ion-text-center">
+              Connexion
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-center">
+            Connectez-vous maintenant pour accéder aux services <ion-text color="warning">TAWSSIL </ion-text>
+
+
+            <ion-item>
+              <ion-label position="floating" class="ion-align-self-center">Mobile ou Email</ion-label>
+              <ion-input type="text" ngModel #login="ngModel" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating" class="ion-align-self-center">Mot de passe</ion-label>
+              <ion-input type="password" ngModel #password="ngModel" required></ion-input>
+            </ion-item>
+            <p class="ion-text-end" style="margin-top: 20px;"><ion-text color="primary" [routerLink]="['..','forgot-password']" style="cursor: pointer;">Mot de passe oublié?</ion-text></p>
+            <div class="authentication">
+              <ion-button shape="block" color="warning" style="height: 60px;"><ion-icon name="lock-open-outline" slot="start"></ion-icon>Connexion</ion-button>
+            </div>
+            <ion-row>
+              <ion-col>
+                Je n'ai pas de compte ? <ion-text color="primary" [routerLink]="['..','sign-up']" style="cursor: pointer;">S'inscrire</ion-text>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                se connecter à l'aide de mon compte
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-text><ion-icon name="logo-facebook" style="color: #365899;" class="social"></ion-icon></ion-text>
+                <ion-text><ion-icon name="logo-google" style="color: #DB4437;" class="social"></ion-icon></ion-text>
+                <ion-text><ion-icon name="logo-twitter" style="color: #00ACEE;" class="social"></ion-icon></ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

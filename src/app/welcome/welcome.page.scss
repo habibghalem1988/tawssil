@@ -1,0 +1,33 @@
+ion-grid{
+  background-image: url("../../assets/nice-women.jpg") ;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+.title{
+  font-size: 20px;
+  color: cadetblue;
+}
+ion-icon{
+  font-size: 34px;
+  color: orange;
+}
+
+.action-sheet{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+}
+
+ion-item{
+  border-radius: 20px;
+}
+
+ion-button{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 60px;
+  font-size: 24px;
+}
+
+p{
+  color: grey;
+}
